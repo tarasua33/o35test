@@ -1,0 +1,43 @@
+.topFooter {
+  background-color: @colorMenu;
+  &-menu {
+    &-list {
+      list-style: none;
+      padding: 0;
+      padding-top: 23px;
+      padding-bottom: 23px;
+      margin: 0;
+      text-align: center;
+      &-item {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        &-link {
+          display: inline-block;
+          padding: 9px;
+          font-size: 14px;
+          text-transform: uppercase;
+          text-decoration: none;
+          color: white;
+          transition: 0.3s;
+          &:hover {
+            background-color: #0c729c;
+            color: white;
+            text-decoration: none;
+            border-radius: 3px;
+          }
+        }
+      }
+    }
+  }
+}
+.bottomFooter {
+  text-align: center;
+  padding-top: 26px;
+  background-color: #001b4a;
+  &-contact {
+    text-align: center;
+    .textFont(14px,400,white);
+    margin-bottom: 20px;
+  }
+}

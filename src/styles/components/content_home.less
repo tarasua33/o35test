@@ -1,0 +1,431 @@
+.homeSlider {
+  &-item {
+    padding-top: 155px;
+    background-image: url("../img/banner_1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    height: 500px;
+    line-height: 1;
+    padding-left: 15px;
+    padding-right: 15px;
+    &-header {
+      .textFont(38px,thin,white);
+    }
+    &-desc {
+      .textFont(24px,thin,white);
+      margin-top: 15px;
+    }
+    &-more {
+      .textFont(18px,400,white);
+      display: inline-block;
+      border: 2px solid white;
+      border-radius: 3px;
+      padding: 19px 23px 19px 23px;
+      margin-top: 45px;
+      transition: 0.2s;
+      &:hover {
+        text-decoration: none;
+        background-color: rgba(255,255,255,0.3);
+        color: white;
+      }
+    }
+  }
+}
+.slick-dots {
+  margin-top: -20px;
+}
+.bluSection {
+  background-color: @bgHover;
+  font-size: 0;
+  &-content {
+    line-height: 1;
+    text-align: center;
+    padding-top: 34px;
+    padding-bottom: 28px;
+    &-text {
+      .textFont(18px,400,white);
+    }
+  }
+}
+.descSection {
+  background-color: white;
+  font-size: 0;
+  &-cont {
+    padding-top: 50px;
+    padding-bottom: 54px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &-text {
+      .textFont(14px,400,#767676);
+      margin: 0;
+      &>strong {
+        color: #444444;
+      }
+    }
+  }
+}
+.newListing {
+  background-image: url("../img/bgSky.jpg");
+  &-img {
+    &-pic {
+      width: 100%;
+    }
+  }
+  &-info {
+    padding-left: 50px;
+    &-title {
+      .textFont(36px,400,@colorMenu);
+      margin-top: 49px;
+      margin-bottom: 20px;
+    }
+    &-desc {
+      .textFont(14px,400,#767676);
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+    &-butt {
+      font-family: OpenSans, sans-serif;
+      .textFont(14px,400,white);
+      background-color: @colorMenu;
+      border: none;
+      border-radius: 3px;
+      padding: 12px 20px 11px 20px;
+      transition: 0.2s;
+      &:hover {
+        border-bottom: 2px solid darken(@colorMenu, 25%) ;
+        border-right: 2px solid darken(@colorMenu, 25%) ;
+      }
+    }
+  }
+}
+.propertySearch {
+  background-color: white;
+  margin-top: 29px;
+  margin-bottom: 29px;
+  padding-top: 51px;
+  padding-bottom: 39px;
+  &-header {
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 25px;
+    &-title {
+      .textFont(20px,bold,@colorMenu);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    &-desc {
+      .textFont(14px,400,#444444);
+      font-family: sans-serif;
+    }
+  }
+  &-product {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    &-item {
+      width: 204px;
+      display: inline-block;
+      text-align: center;
+      line-height: 1;
+      &-link {
+        width: 100%;
+        display: inline-block;
+      }
+      &-pic {
+        width: 100%;
+      }
+      &-title {
+        display: inline-block;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        .textFont(14px,400,@colorMenu);
+        font-family: OpenSans, sans-serif;
+        text-transform: uppercase;
+        transition: 0.2s;
+        &:hover {
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+.options {
+  background-color: #eeeeee;
+  padding-top: 50px;
+  padding-bottom: 57px;
+  &-item {
+    vertical-align: bottom;
+    &-content {
+      margin-left: 30px;
+      vertical-align: top;
+      display: inline-block;
+      line-height: 1;
+      &-title {
+        .textFont(16px,bold,@colorMenu);
+        text-transform: uppercase;
+        margin-bottom: 27px;
+        font-family: sans-serif;
+      }
+      &-desc {
+        max-width: 250px;
+        line-height: 1.6;
+        .textFont(14px,400,#444);
+        font-family: sans-serif;
+      }
+    }
+  }
+}
+.news {
+  background-color: white;
+  padding-top: 80px;
+  padding-bottom: 65px;
+  &-header {
+    text-align: center;
+    line-height: 1;
+    padding-bottom: 25px;
+    &-title {
+      .textFont(20px,bold,@colorMenu);
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+    &-desc {
+      .textFont(14px,400,#444444);
+      font-family: sans-serif;
+    }
+  }
+  &-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    &-item {
+      display: inline-block;
+      &-pic {
+        width: 100%;
+      }
+      &-desc {
+        line-height: 1;
+        height: 240px;
+        border: solid 1px #d8d8d8;
+        padding-left: 21px;
+        &-title {
+          .textFont(16px,bold,@colorMenu);
+          margin-top: 23px;
+          margin-bottom: 15px;
+          font-family: sans-serif;
+          line-height: 1.6;
+        }
+        &-date {
+          .textFont(14px,400,#a8a8a8);
+        }
+        &-text {
+          line-height: 1.6;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          .textFont(14px,400,#444);
+        }
+        &-more {
+          display: inline-block;
+          padding-bottom: 10px;
+          text-decoration: none;
+          line-height: 1.6;
+          .textFont(14px,400,@colorMenu);
+          &:hover {
+            text-decoration: none;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media screen and (max-width: 1200px) {
+  .newListing {
+    &-info {
+      &-title {
+        margin-top: 5px;
+      }
+    }
+  }
+  .options {
+    &-item {
+      &-content {
+        margin-left: 10px;
+        &-title {
+          margin-bottom: 20px;
+        }
+        &-desc {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+  .news {
+    &-list {
+      &-item {
+        border: solid 1px #d8d8d8;
+        margin-top: 10px;
+        &-pic {
+          width: auto;
+          vertical-align: top;
+        }
+        &-desc {
+          display: inline-block;
+          height: 100%;
+          border: none;
+          &-text {
+            max-width: 310px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .newListing {
+    padding-bottom: 5px;
+    &-img {
+      padding-top: 25px;
+      &-pic {
+
+      }
+    }
+    &-info {
+      &-title {
+      }
+    }
+  }
+  .options {
+    &-items {
+    }
+    &-item {
+      margin-bottom: 15px;
+      &-content {
+        margin-left: 30px;
+        &-title {
+          margin-bottom: 20px;
+        }
+        &-desc {
+          max-width: 250px;
+        }
+      }
+      &:nth-child(3) {
+        padding-left: 200px;
+      }
+    }
+  }
+  .news {
+    &-list {
+      &-item {
+        &-pic {
+          width: auto;
+          vertical-align: top;
+        }
+        &-desc {
+          &-text {
+            max-width: 290px;
+          }
+          &-title {
+            max-width: 290px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .newListing {
+    padding-bottom: 5px;
+    &-img {
+      padding-top: 0;
+    }
+  }
+  .propertySearch {
+    &-product {
+      display: block;
+      text-align: center;
+      &-item {
+        display: inline-block;
+        &-link {
+
+        }
+      }
+    }
+  }
+  .options {
+    &-items {
+    }
+    &-item {
+      padding-left: 20%;
+      &:nth-child(3) {
+        padding-left: 20%;
+      }
+    }
+  }
+  .news {
+    &-list {
+      text-align: center;
+      &-item {
+        border: none;
+        &-pic {
+          width: 350px;
+        }
+        &-desc {
+          text-align: left;
+          border: solid 1px #d8d8d8;
+          display: inline-block;
+          width: 350px;
+          &-text {
+            max-width: 290px;
+          }
+          &-title {
+            max-width: 290px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 464px) {
+  .options {
+    &-items {
+    }
+    &-item {
+      padding-left: 10px;
+      &-content {
+        margin-left: 10px;
+        &-desc {
+          max-width: 200px;
+        }
+      }
+      &:nth-child(3) {
+        padding-left: 10px;
+      }
+    }
+  }
+  .news {
+    &-list {
+      &-item {
+        width: auto;
+        &-pic {
+          width: 100%;
+        }
+        &-desc {
+          width: 100%;
+          &-text {
+          }
+          &-title {
+          }
+        }
+      }
+    }
+  }
+}
